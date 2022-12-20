@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {DisplaySpaceMission} from "./graphql/index"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App ">
+      <h1 className='bg-gray-200 font-bold text-2xl mx-auto my-10 w-1/4 p-4 rounded' >SpaceX Missions</h1>
+      <div className='flex justify-center items-center gap-2 flex-wrap'>
+        <DisplaySpaceMission/>
+      </div>
     </div>
   );
 }
